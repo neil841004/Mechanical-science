@@ -25,7 +25,7 @@ public class Answer : MonoBehaviour
     }
     public void Judge() //判斷答案
     {
-        if (!resultO.activeInHierarchy || !resultX.activeInHierarchy)
+        if (!resultO.activeInHierarchy && !resultX.activeInHierarchy)
         {
             if (answer)
             {
@@ -46,7 +46,7 @@ public class Answer : MonoBehaviour
             {
                 resultX.SetActive(true);
                 again.SetActive(true);
-                enter.gameObject.SetActive(true);
+                enter.gameObject.SetActive(false);
                 //GameObject.FindWithTag("SE").SendMessage("PlaySE",2);
             }
         }
