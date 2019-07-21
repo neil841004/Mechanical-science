@@ -1,9 +1,24 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 [DisallowMultipleComponent]
 public sealed class UserAnswerValidation : MonoBehaviour {
 
 	public SnapPosition2D[] snapPositions = new SnapPosition2D[0];
+	public UnityEvent onValidationSuccess = new UnityEvent();
+	public UnityEvent onValidationFailure = new UnityEvent();
+
+	public void ValidateUserAnswers() {
+		if (correct) {
+			if (onValidationSuccess != null) {
+				onValidationSuccess.Invoke();
+			}
+		} else {
+			if (onValidationFailure != null) {
+				onValidationFailure.Invoke();
+			}
+		}
+	}
 
 	public bool correct {
 		get {
