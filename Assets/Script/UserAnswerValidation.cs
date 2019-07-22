@@ -5,6 +5,8 @@ using UnityEngine.Events;
 public sealed class UserAnswerValidation : MonoBehaviour {
 
 	public SnapPosition2D[] snapPositions = new SnapPosition2D[0];
+	public UnityEvent onComplete = new UnityEvent();
+	public UnityEvent onIncomplete = new UnityEvent();
 	public UnityEvent onValidationSuccess = new UnityEvent();
 	public UnityEvent onValidationFailure = new UnityEvent();
 
@@ -37,4 +39,30 @@ public sealed class UserAnswerValidation : MonoBehaviour {
 			return true;
 		}
 	}
+
+	public bool complete {
+		get {
+			for (int i = 0; i != snapPositions.Length; ++i) {
+				for (int j = 0; j != snapPositions[i].correntAnswers.Length; ++j) {
+					if (!snapPositions[i].currentAnswer) {
+						return false;
+					}
+				}
+			}
+			return true;
+		}
+	}
+
+	void Update() {
+		bool complete = this.complete;
+		if (complete == m_complete) {
+			return;
+		}
+		if (m_complete = complete) {
+			onComplete.Invoke();
+		} else {
+			onIncomplete.Invoke();
+		}
+	}
+	bool m_complete = false;
 }
