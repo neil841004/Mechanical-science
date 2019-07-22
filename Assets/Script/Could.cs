@@ -20,15 +20,15 @@ public class Could : MonoBehaviour {
 	void Update () {
 		if(direction == Direction.right){
 			position.x += speed;
-			if(position.x>=14){
-				position.x = -14;
+			if(position.x>=10){
+				position.x = -10;
 			}
 			this.transform.position = position;
 		}
 		if(direction == Direction.left){
 			position.x -= speed;
-			if(position.x <=-13){
-				position.x = 13;
+			if(position.x <=-10){
+				position.x = 10;
 			}
 			this.transform.position = position;
 		}
