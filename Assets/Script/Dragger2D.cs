@@ -8,6 +8,7 @@ public class Dragger2D : MonoBehaviour {
 	public Camera inputCamera;
 	public Collider2D[] inputReceivers = new Collider2D[0];
 	public SnapPosition2D[] snapPositions = new SnapPosition2D[0];
+	public Vector2 confine = Vector2.zero;
 
 	public virtual void OnTouchBegan() {
 
@@ -98,7 +99,11 @@ public class Dragger2D : MonoBehaviour {
 		Ray inputRay = inputCamera.ScreenPointToRay(screenPoint);
 		if (new Plane(Vector3.forward, m_touchHit.collider.transform.position).Raycast(inputRay, out enterDist)) {
 			Vector2 enterPoint = inputRay.GetPoint(enterDist);
-			transform.position += (Vector3)(enterPoint - m_touchDownPosition);
+			Vector3 deltaPosition = enterPoint - m_touchDownPosition;
+			if (confine != Vector2.zero) {
+				deltaPosition = Vector3.Project(deltaPosition, confine);
+			}
+			transform.position += deltaPosition;
 			m_touchDownPosition = enterPoint;
 		}
 		OnTouchMove();
@@ -127,23 +132,28 @@ public class Dragger2D : MonoBehaviour {
 
 	RaycastHit2D InputHitReceiver(Vector2 screenPoint) {
 		RaycastHit2D[] hits = Physics2D.GetRayIntersectionAll(inputCamera.ScreenPointToRay(screenPoint));
-		if (hits.Length != 0) {
-			RaycastHit2D hit = hits[0];
-			if (m_touchSprite = hit.collider.GetComponentInParent<SpriteRenderer>()) {
-				for (int i = 1; i != hits.Length; ++i) {
-					SpriteRenderer sprite = hits[i].collider.GetComponentInParent<SpriteRenderer>();
-					if (sprite) {
-						if (CompareSpriteSortingOrder(sprite, m_touchSprite) > 0) {
-							hit = hits[i];
-							m_touchSprite = sprite;
-						}
-					} else {
-						hit = hits[i];
-						break;
-					}
-				}
+		RaycastHit2D hit = default(RaycastHit2D);
+		int i = 0;
+		while (i != hits.Length) {
+			if (m_touchSprite = hits[i].collider.GetComponentInParent<SpriteRenderer>()) {
+				hit = hits[i];
+				break;
 			}
-			for (int i = 0; i != inputReceivers.Length; ++i) {
+			++i;
+		}
+		while (i != hits.Length) {
+			SpriteRenderer sprite = hits[i].collider.GetComponentInParent<SpriteRenderer>();
+			if (sprite && CompareSpriteSortingOrder(sprite, m_touchSprite) > 0) {
+				hit = hits[i];
+				m_touchSprite = sprite;
+			}
+			++i;
+		}
+		if (!hit && hits.Length != 0) {
+			hit = hits[0];
+		}
+		if (hit) {
+			for (i = 0; i != inputReceivers.Length; ++i) {
 				if (hit.collider == inputReceivers[i]) {
 					return hit;
 				}
