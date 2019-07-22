@@ -10,28 +10,33 @@ public class Dragger2D : MonoBehaviour {
 	public SnapPosition2D[] snapPositions = new SnapPosition2D[0];
 	public Vector2 confine = Vector2.zero;
 
-	public virtual void OnTouchBegan() {
-
+	public void ResetPosition() {
+		if (m_snapPosition) {
+			transform.position = m_startingPosition;
+			m_snapPosition.currentAnswer = null;
+			m_snapPosition = null;
+		}
 	}
 
-	public virtual void OnTouchMove() {
+	public virtual void OnTouchBegan() {}
 
-	}
+	public virtual void OnTouchMove() {}
 
-	public virtual void OnTouchEnd() {
+	public virtual void OnTouchEnd() {}
 
-	}
-
-	public virtual void OnEnable() {
+	protected virtual void Awake() {
 		m_startingPosition = transform.position;
+	}
+
+	protected virtual void OnEnable() {
 		m_draggers.Add(this);
 	}
 
-	public virtual void OnDisable() {
+	protected virtual void OnDisable() {
 		m_draggers.Remove(this);
 	}
 
-	public virtual void Update() {
+	protected virtual void Update() {
 		if (m_touchHit) {
 			if (Input.touchSupported) {
 				for (int i = 0; i != Input.touchCount; ++i) {
