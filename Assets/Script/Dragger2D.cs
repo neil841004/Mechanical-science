@@ -48,7 +48,7 @@ public class Dragger2D : MonoBehaviour {
 							Release();
 							break;
 						case TouchPhase.Moved:
-							Drag(m_touch.position);
+							Drag(touch.position);
 							break;
 						}
 						break;
