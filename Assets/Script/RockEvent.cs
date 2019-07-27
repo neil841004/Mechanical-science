@@ -47,6 +47,7 @@ public class RockEvent : MonoBehaviour {
 	public void ResetPigLevel(){
 		this.GetComponent<Animator>().Play("Nothing");
 		this.GetComponent<Animator>().SetInteger("rockWay",0);
+		pivotNumber = 2;
 		resetPig.Invoke();
 	}
 }
