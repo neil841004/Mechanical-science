@@ -9,8 +9,9 @@ public class RockEvent : MonoBehaviour {
 	public UnityEvent isTrue = new UnityEvent();
 	public UnityEvent isFalse = new UnityEvent();
 	public UnityEvent resetPig = new UnityEvent();
+	public UnityEvent backHome = new UnityEvent();
 	public GameObject pig;
-	public Sprite pigInjured;
+	public Sprite pigInjured, pigOrigin;
 	public int pigNumber;
 	public int pivotNumber;
 	// Use this for initialization
@@ -49,5 +50,12 @@ public class RockEvent : MonoBehaviour {
 		this.GetComponent<Animator>().SetInteger("rockWay",0);
 		pivotNumber = 2;
 		resetPig.Invoke();
+	}
+	public void BackHome(){
+		this.GetComponent<Animator>().Play("Nothing");
+		this.GetComponent<Animator>().SetInteger("rockWay",0);
+		pivotNumber = 2;
+		pig.GetComponent<SpriteRenderer>().sprite = pigOrigin;
+		backHome.Invoke();
 	}
 }

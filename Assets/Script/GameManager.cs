@@ -50,13 +50,14 @@ public class GameManager : MonoBehaviour
     
     public void backHome()
     {
-        // for (int i = 1; i <= 17; i++)
-        // {
-        //     displayUI[i].SetActive(false);
-        // }
-        // displayUI[0].SetActive(true);
+        for (int i = 2; i <= 22; i++)
+        {
+            displayUI[i].SetActive(false);
+        }
+        displayUI[1].SetActive(true);
         isHome = true;
         StartCoroutine(ResetIsHome());
+        homeBtn.gameObject.SetActive(false);
     }
     IEnumerator ResetIsHome()
     {
