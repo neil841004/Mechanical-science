@@ -9,7 +9,7 @@ public class Answer : MonoBehaviour
     public GameObject resultX;
     public GameObject again;
     public GameObject enter;
-    public GameObject A1, A2, A3, A4;
+    public GameObject A1, A2, A3, A4, block;
     public bool answer = false;
     public int q = 0;
 
@@ -65,6 +65,7 @@ public class Answer : MonoBehaviour
         resultX.SetActive(false);
         again.SetActive(false);
         enter.SetActive(false);
+        block.SetActive(false);
         answer = false;
         A1.transform.GetChild(0).gameObject.SetActive(false);
         A2.transform.GetChild(0).gameObject.SetActive(false);

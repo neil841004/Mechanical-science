@@ -29,10 +29,12 @@ public class BGswitch : MonoBehaviour
 	IEnumerator functionName(int j)
 	{
 		yield return new WaitForSeconds(2f);
+        if(!GameObject.FindWithTag("GM").GetComponent<GameManager>().isHome){
 		for (int i = 0; i <= 12; i++)
         {
             this.transform.GetChild(i).gameObject.SetActive(false);
         }
         this.transform.GetChild(j).gameObject.SetActive(true);
+        }
 	}
 }
