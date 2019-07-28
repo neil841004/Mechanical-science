@@ -14,10 +14,12 @@ public sealed class UserAnswerValidation : MonoBehaviour {
 		if (correct) {
 			if (onValidationSuccess != null) {
 				onValidationSuccess.Invoke();
+				GameObject.FindWithTag("SE").SendMessage("CorrectSE");
 			}
 		} else {
 			if (onValidationFailure != null) {
 				onValidationFailure.Invoke();
+				GameObject.FindWithTag("SE").SendMessage("ErrorSE");
 			}
 		}
 	}

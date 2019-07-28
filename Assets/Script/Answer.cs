@@ -30,6 +30,7 @@ public class Answer : MonoBehaviour
             if (answer)
             {
                 resultO.SetActive(true);
+                GameObject.FindWithTag("SE").SendMessage("CorrectSE");
                 GameObject.FindWithTag("GM").SendMessage("CloseUIDelay", 10 + q);
                 GameObject.FindWithTag("GM").SendMessage("OpenUIDelay", 11 + q);
                 if (q < 2)
@@ -40,14 +41,13 @@ public class Answer : MonoBehaviour
                 {
                     GameObject.FindWithTag("BG").SendMessage("SwitchBGDelay", 1);
                 }
-                //GameObject.FindWithTag("SE").SendMessage("PlaySE",1);
             }
             if (!answer)
             {
                 resultX.SetActive(true);
                 again.SetActive(true);
                 enter.gameObject.SetActive(false);
-                //GameObject.FindWithTag("SE").SendMessage("PlaySE",2);
+                GameObject.FindWithTag("SE").SendMessage("ErrorSE");
             }
         }
     }
