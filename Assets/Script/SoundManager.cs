@@ -41,4 +41,8 @@ public class SoundManager : MonoBehaviour
         this.GetComponent<AudioSource>().volume = 0.8f;
         this.GetComponent<AudioSource>().PlayOneShot(se[4]);
     }
+    public void PigHitSE(){
+        this.GetComponent<AudioSource>().volume = 1f;
+        this.GetComponent<AudioSource>().PlayOneShot(se[5]);
+    }
 }

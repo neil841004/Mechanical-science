@@ -35,6 +35,7 @@ public class RockEvent : MonoBehaviour {
 	public void ShowAnswer(){
 		if(pigNumber == pivotNumber){
 			pig.GetComponent<SpriteRenderer>().sprite = pigInjured;
+			GameObject.FindWithTag("SE").SendMessage("PigHitSE");
 			StartCoroutine(ShowAnswerDelay(true));
 		}else StartCoroutine(ShowAnswerDelay(false));
 	}
