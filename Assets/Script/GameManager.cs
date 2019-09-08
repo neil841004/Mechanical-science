@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
     
     public void backHome()
     {
-        for (int i = 2; i <= 22; i++)
+        for (int i = 2; i <= 24; i++)
         {
             displayUI[i].SetActive(false);
         }
