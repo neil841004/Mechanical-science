@@ -8682,8 +8682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   snapAreas:
   - {fileID: 468503559}
-  correntAnswers:
-  - {fileID: 0}
+  correntAnswers: []
 --- !u!1 &468959908
 GameObject:
   m_ObjectHideFlags: 0
@@ -9523,12 +9522,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  validationMode: 0
   snapPositions:
   - {fileID: 334759901}
   - {fileID: 966619468}
   - {fileID: 1347830877}
   - {fileID: 1604149691}
   - {fileID: 1826382612}
+  draggers: []
   onComplete:
     m_PersistentCalls:
       m_Calls:
@@ -11161,12 +11162,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  validationMode: 0
   snapPositions:
   - {fileID: 644833182}
   - {fileID: 823165934}
   - {fileID: 247472642}
   - {fileID: 23117216}
   - {fileID: 312906452}
+  draggers: []
   onComplete:
     m_PersistentCalls:
       m_Calls:
@@ -13671,7 +13674,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1095941855}
+      - m_Target: {fileID: 1650642815}
         m_MethodName: ResetDragObj
         m_Mode: 1
         m_Arguments:
@@ -13682,7 +13685,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 338362077}
+      - m_Target: {fileID: 300968953}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -14517,12 +14520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  validationMode: 0
+  snapPositions: []
+  draggers: []
   onComplete:
     m_PersistentCalls:
       m_Calls:
@@ -15900,12 +15900,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  validationMode: 0
   snapPositions:
   - {fileID: 1173119}
   - {fileID: 45750691}
   - {fileID: 1568937876}
   - {fileID: 2042886152}
   - {fileID: 968468693}
+  draggers: []
   onComplete:
     m_PersistentCalls:
       m_Calls:
@@ -23429,6 +23431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  validationMode: 0
   snapPositions:
   - {fileID: 2027657793}
   - {fileID: 2091232101}
@@ -23436,6 +23439,7 @@ MonoBehaviour:
   - {fileID: 153055203}
   - {fileID: 1403224004}
   - {fileID: 336138268}
+  draggers: []
   onComplete:
     m_PersistentCalls:
       m_Calls:
@@ -34197,9 +34201,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapPositions:
-  - {fileID: 468503560}
-  - {fileID: 2101142602}
+  validationMode: 1
+  snapPositions: []
+  draggers:
+  - {fileID: 973816172}
   onComplete:
     m_PersistentCalls:
       m_Calls:

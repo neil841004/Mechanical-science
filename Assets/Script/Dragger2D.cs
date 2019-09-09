@@ -10,6 +10,12 @@ public class Dragger2D : MonoBehaviour {
 	public SnapPosition2D[] snapPositions = new SnapPosition2D[0];
 	public Vector2 confine = Vector2.zero;
 
+	public SnapPosition2D snapPosition {
+		get {
+			return m_snapPosition;
+		}
+	}
+
 	public void ResetPosition() {
 		if (m_snapPosition) {
 			transform.position = m_startingPosition;
