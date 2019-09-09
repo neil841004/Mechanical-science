@@ -85,30 +85,14 @@ public sealed class UserAnswerValidation : MonoBehaviour {
 			switch (validationMode) {
 			case ValidationMode.SnapPosition:
 				for (int i = 0; i != snapPositions.Length; ++i) {
-					bool wrong = true;
-					for (int j = 0; j != snapPositions[i].correntAnswers.Length; ++j) {
-						if (snapPositions[i].currentAnswer == snapPositions[i].correntAnswers[j]) {
-							wrong = false;
-							break;
-						}
-					}
-					if (wrong) {
+					if (!snapPositions[i].correct) {
 						return false;
 					}
 				}
 				return true;
 			case ValidationMode.Dragger:
 				for (int i = 0; i != draggers.Length; ++i) {
-					bool wrong = true;
-					if (draggers[i].snapPosition) {
-						for (int j = 0; j != draggers[i].snapPosition.correntAnswers.Length; ++j) {
-							if (draggers[i].snapPosition.correntAnswers[j] == draggers[i]) {
-								wrong = false;
-								break;
-							}
-						}
-					}
-					if (wrong) {
+					if (!draggers[i].snapPosition || !draggers[i].snapPosition.correct) {
 						return false;
 					}
 				}
