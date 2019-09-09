@@ -12,14 +12,14 @@ public sealed class SnapPosition2D : MonoBehaviour {
 		get {
 			if (multipleAnswer) {
 				for (int i = 0; i != correntAnswers.Length; ++i) {
-					bool empty = true;
+					bool wrong = true;
 					for (int j = 0; j != currentAnswers.Count; ++j) {
-						if (currentAnswers[j] == correntAnswers[i]) {
-							empty = false;
+						if (correntAnswers[i] == currentAnswers[j]) {
+							wrong = false;
 							break;
 						}
 					}
-					if (empty) {
+					if (wrong) {
 						return false;
 					}
 				}

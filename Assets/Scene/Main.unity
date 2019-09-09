@@ -9857,7 +9857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationMode: 0
   snapPositions:
   - {fileID: 334759901}
   - {fileID: 966619468}
@@ -11526,7 +11525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationMode: 0
   snapPositions:
   - {fileID: 644833182}
   - {fileID: 823165934}
@@ -15047,8 +15045,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationMode: 1
-  snapPositions: []
+  snapPositions:
+  - {fileID: 1944451162}
+  - {fileID: 1012517066}
+  - {fileID: 1371436070}
   draggers:
   - {fileID: 1712667873}
   - {fileID: 651683534}
@@ -16503,7 +16503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationMode: 0
   snapPositions:
   - {fileID: 1173119}
   - {fileID: 45750691}
@@ -24083,7 +24082,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationMode: 0
   snapPositions:
   - {fileID: 2027657793}
   - {fileID: 2091232101}
@@ -35447,7 +35445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationMode: 1
   snapPositions: []
   draggers:
   - {fileID: 973816172}
@@ -37272,7 +37269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationMode: 1
   snapPositions: []
   draggers:
   - {fileID: 1420458347}
