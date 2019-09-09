@@ -19,8 +19,7 @@ public class Dragger2D : MonoBehaviour {
 	public void ResetPosition() {
 		if (m_snapPosition) {
 			transform.position = m_startingPosition;
-			m_snapPosition.currentAnswer = null;
-			m_snapPosition = null;
+			DisconnectFromSnapPosition();
 		}
 	}
 
@@ -99,8 +98,7 @@ public class Dragger2D : MonoBehaviour {
 		}
 		m_touchDownPosition = m_touchHit.point;
 		if (m_snapPosition) {
-			m_snapPosition.currentAnswer = null;
-			m_snapPosition = null;
+			DisconnectFromSnapPosition();
 		}
 		OnTouchBegan();
 	}
@@ -128,8 +126,12 @@ public class Dragger2D : MonoBehaviour {
 			Collider2D[] snapAreas = snapPositions[i].snapAreas;
 			for (int j = 0; j != snapAreas.Length; ++j) {
 				if (snapAreas[j].OverlapPoint(transform.position)) {
-					transform.position = snapAreas[j].transform.position;
-					(m_snapPosition = snapPositions[i]).currentAnswer = this;
+					if ((m_snapPosition = snapPositions[i]).multipleAnswer) {
+						m_snapPosition.currentAnswers.Add(this);
+					} else {
+						m_snapPosition.currentAnswer = this;
+						transform.position = snapAreas[j].transform.position;
+					}
 					break;
 				}
 			}
@@ -209,6 +211,15 @@ public class Dragger2D : MonoBehaviour {
 		}
 		transformPoint = default(Vector2);
 		return false;
+	}
+
+	void DisconnectFromSnapPosition() {
+		if (m_snapPosition.multipleAnswer) {
+			m_snapPosition.currentAnswers.Remove(this);
+		} else {
+			m_snapPosition.currentAnswer = null;
+		}
+		m_snapPosition = null;
 	}
 
 	[NonSerialized] RaycastHit2D m_touchHit = default(RaycastHit2D);

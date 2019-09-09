@@ -178,6 +178,7 @@ MonoBehaviour:
   - {fileID: 890650260}
   - {fileID: 1980361370}
   - {fileID: 610810395}
+  multipleAnswer: 0
 --- !u!1 &17856478
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +513,7 @@ MonoBehaviour:
   - {fileID: 23117217}
   correntAnswers:
   - {fileID: 398820546}
+  multipleAnswer: 0
 --- !u!61 &23117217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1012,6 +1014,7 @@ MonoBehaviour:
   - {fileID: 1064028241}
   - {fileID: 1502478517}
   - {fileID: 617329444}
+  multipleAnswer: 0
 --- !u!1 &47902618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,6 +2913,7 @@ MonoBehaviour:
   - {fileID: 267796463}
   - {fileID: 1990257527}
   - {fileID: 1732748346}
+  multipleAnswer: 0
 --- !u!61 &153055204
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3731,11 +3735,9 @@ MonoBehaviour:
   inputReceivers:
   - {fileID: 181870311}
   snapPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1944451162}
+  - {fileID: 1012517066}
+  - {fileID: 1371436070}
   confine: {x: 0, y: 0}
 --- !u!61 &181870311
 BoxCollider2D:
@@ -4950,6 +4952,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 242150941}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &243719588
 GameObject:
   m_ObjectHideFlags: 0
@@ -5196,6 +5199,7 @@ MonoBehaviour:
   - {fileID: 247472643}
   correntAnswers:
   - {fileID: 676732371}
+  multipleAnswer: 0
 --- !u!61 &247472643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6119,6 +6123,7 @@ MonoBehaviour:
   - {fileID: 312906453}
   correntAnswers:
   - {fileID: 56975183}
+  multipleAnswer: 0
 --- !u!61 &312906453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6270,6 +6275,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 316571200}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &321450490
 GameObject:
   m_ObjectHideFlags: 0
@@ -6795,6 +6801,7 @@ MonoBehaviour:
   - {fileID: 1782475549}
   - {fileID: 903913925}
   - {fileID: 1648057282}
+  multipleAnswer: 0
 --- !u!1 &336138267
 GameObject:
   m_ObjectHideFlags: 0
@@ -6830,6 +6837,7 @@ MonoBehaviour:
   - {fileID: 267796463}
   - {fileID: 1990257527}
   - {fileID: 1732748346}
+  multipleAnswer: 0
 --- !u!61 &336138269
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7994,6 +8002,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 396592732}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &398820545
 GameObject:
   m_ObjectHideFlags: 0
@@ -8986,6 +8995,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 468503559}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &468959908
 GameObject:
   m_ObjectHideFlags: 0
@@ -10709,6 +10719,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 597540482}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &603442857
 GameObject:
   m_ObjectHideFlags: 0
@@ -10755,11 +10766,9 @@ MonoBehaviour:
   inputReceivers:
   - {fileID: 603442860}
   snapPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1944451162}
+  - {fileID: 1012517066}
+  - {fileID: 1371436070}
   confine: {x: 0, y: 0}
 --- !u!61 &603442860
 BoxCollider2D:
@@ -11904,6 +11913,7 @@ MonoBehaviour:
   - {fileID: 644833183}
   correntAnswers:
   - {fileID: 691056785}
+  multipleAnswer: 0
 --- !u!61 &644833183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12114,11 +12124,9 @@ MonoBehaviour:
   inputReceivers:
   - {fileID: 651683535}
   snapPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1944451162}
+  - {fileID: 1012517066}
+  - {fileID: 1371436070}
   confine: {x: 0, y: 0}
 --- !u!61 &651683535
 BoxCollider2D:
@@ -12796,11 +12804,9 @@ MonoBehaviour:
   inputReceivers:
   - {fileID: 666992058}
   snapPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1944451162}
+  - {fileID: 1012517066}
+  - {fileID: 1371436070}
   confine: {x: 0, y: 0}
 --- !u!61 &666992058
 BoxCollider2D:
@@ -14529,6 +14535,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 777423515}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &784974303
 GameObject:
   m_ObjectHideFlags: 0
@@ -15018,9 +15025,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55feb1ef52e01c74c998135021aae155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationMode: 0
+  validationMode: 1
   snapPositions: []
-  draggers: []
+  draggers:
+  - {fileID: 1712667873}
+  - {fileID: 651683534}
+  - {fileID: 181870310}
+  - {fileID: 603442859}
+  - {fileID: 1972371231}
+  - {fileID: 666992057}
   onComplete:
     m_PersistentCalls:
       m_Calls:
@@ -15682,6 +15695,7 @@ MonoBehaviour:
   - {fileID: 823165935}
   correntAnswers:
   - {fileID: 890789013}
+  multipleAnswer: 0
 --- !u!61 &823165935
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16091,6 +16105,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 845621067}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!61 &845621067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17758,6 +17773,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 921735085}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &926110000
 GameObject:
   m_ObjectHideFlags: 0
@@ -18604,6 +18620,7 @@ MonoBehaviour:
   - {fileID: 1754503488}
   - {fileID: 1547154337}
   - {fileID: 1042367659}
+  multipleAnswer: 0
 --- !u!1 &968468692
 GameObject:
   m_ObjectHideFlags: 0
@@ -18641,6 +18658,7 @@ MonoBehaviour:
   - {fileID: 890650260}
   - {fileID: 1980361370}
   - {fileID: 610810395}
+  multipleAnswer: 0
 --- !u!58 &968468694
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20090,6 +20108,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1012517064}
   - component: {fileID: 1012517065}
+  - component: {fileID: 1012517067}
+  - component: {fileID: 1012517066}
   m_Layer: 0
   m_Name: 2-1-3_type_2
   m_TagString: Untagged
@@ -20154,6 +20174,48 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1012517066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012517063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e6b16f5a7147a40a07636727601900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapAreas:
+  - {fileID: 1012517067}
+  correntAnswers:
+  - {fileID: 1712667873}
+  - {fileID: 666992057}
+  multipleAnswer: 1
+--- !u!61 &1012517067
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012517063}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.33, y: 3.32}
+    newSize: {x: 2.33, y: 3.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.33, y: 3.32}
+  m_EdgeRadius: 0
 --- !u!1 &1019426589
 GameObject:
   m_ObjectHideFlags: 0
@@ -21903,6 +21965,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1102862345}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!61 &1102862345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23240,6 +23303,7 @@ MonoBehaviour:
   - {fileID: 1185060689}
   correntAnswers:
   - {fileID: 2014695149}
+  multipleAnswer: 0
 --- !u!61 &1185060689
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25612,6 +25676,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1331642392}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!61 &1331642392
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25974,6 +26039,7 @@ MonoBehaviour:
   - {fileID: 1782475549}
   - {fileID: 903913925}
   - {fileID: 1648057282}
+  multipleAnswer: 0
 --- !u!1 &1358986036
 GameObject:
   m_ObjectHideFlags: 0
@@ -26051,6 +26117,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1371436068}
   - component: {fileID: 1371436069}
+  - component: {fileID: 1371436071}
+  - component: {fileID: 1371436070}
   m_Layer: 0
   m_Name: 2-1-3_type_3
   m_TagString: Untagged
@@ -26115,6 +26183,48 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1371436070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371436067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e6b16f5a7147a40a07636727601900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapAreas:
+  - {fileID: 1371436071}
+  correntAnswers:
+  - {fileID: 603442859}
+  - {fileID: 1972371231}
+  multipleAnswer: 1
+--- !u!61 &1371436071
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371436067}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.33, y: 3.32}
+    newSize: {x: 2.33, y: 3.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.33, y: 3.32}
+  m_EdgeRadius: 0
 --- !u!1 &1372274792
 GameObject:
   m_ObjectHideFlags: 0
@@ -26184,6 +26294,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1372274794}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &1373920056
 GameObject:
   m_ObjectHideFlags: 0
@@ -26360,6 +26471,7 @@ MonoBehaviour:
   - {fileID: 267796463}
   - {fileID: 1990257527}
   - {fileID: 1732748346}
+  multipleAnswer: 0
 --- !u!61 &1403224005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26959,6 +27071,7 @@ MonoBehaviour:
   - {fileID: 1427419414}
   correntAnswers:
   - {fileID: 1420458347}
+  multipleAnswer: 0
 --- !u!58 &1427419414
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27261,6 +27374,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1434631229}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &1461764313
 GameObject:
   m_ObjectHideFlags: 0
@@ -27460,6 +27574,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1469480792}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!61 &1469480792
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28151,6 +28266,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1497800948}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!61 &1497800948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28507,6 +28623,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1511880975}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &1521463759
 GameObject:
   m_ObjectHideFlags: 0
@@ -29628,6 +29745,7 @@ MonoBehaviour:
   - {fileID: 890650260}
   - {fileID: 1980361370}
   - {fileID: 610810395}
+  multipleAnswer: 0
 --- !u!1 &1574847509
 GameObject:
   m_ObjectHideFlags: 0
@@ -30018,6 +30136,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1590598174}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &1591821322
 GameObject:
   m_ObjectHideFlags: 0
@@ -30431,6 +30550,7 @@ MonoBehaviour:
   - {fileID: 1754503488}
   - {fileID: 1547154337}
   - {fileID: 1042367659}
+  multipleAnswer: 0
 --- !u!1 &1605120758
 GameObject:
   m_ObjectHideFlags: 0
@@ -31835,6 +31955,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1667408252}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!61 &1667408252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32492,11 +32613,9 @@ MonoBehaviour:
   inputReceivers:
   - {fileID: 1712667874}
   snapPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1944451162}
+  - {fileID: 1012517066}
+  - {fileID: 1371436070}
   confine: {x: 0, y: 0}
 --- !u!61 &1712667874
 BoxCollider2D:
@@ -32906,6 +33025,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1739003067}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &1741709640
 GameObject:
   m_ObjectHideFlags: 0
@@ -34379,7 +34499,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1998604596}
+      - m_Target: {fileID: 41517292}
         m_MethodName: ResetDragObj
         m_Mode: 1
         m_Arguments:
@@ -34814,6 +34934,7 @@ MonoBehaviour:
   - {fileID: 1782475549}
   - {fileID: 903913925}
   - {fileID: 1648057282}
+  multipleAnswer: 0
 --- !u!58 &1826382613
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36345,6 +36466,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1921906823}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!1 &1928636733
 GameObject:
   m_ObjectHideFlags: 0
@@ -36883,6 +37005,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1944451160}
   - component: {fileID: 1944451161}
+  - component: {fileID: 1944451163}
+  - component: {fileID: 1944451162}
   m_Layer: 0
   m_Name: 2-1-3_type_1
   m_TagString: Untagged
@@ -36947,6 +37071,48 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1944451162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944451159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e6b16f5a7147a40a07636727601900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapAreas:
+  - {fileID: 1944451163}
+  correntAnswers:
+  - {fileID: 651683534}
+  - {fileID: 181870310}
+  multipleAnswer: 1
+--- !u!61 &1944451163
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944451159}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.33, y: 3.32}
+    newSize: {x: 2.33, y: 3.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.33, y: 3.32}
+  m_EdgeRadius: 0
 --- !u!1 &1946464067
 GameObject:
   m_ObjectHideFlags: 0
@@ -37419,6 +37585,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 1960241103}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!61 &1960241103
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37603,11 +37770,9 @@ MonoBehaviour:
   inputReceivers:
   - {fileID: 1972371232}
   snapPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1944451162}
+  - {fileID: 1012517066}
+  - {fileID: 1371436070}
   confine: {x: 0, y: 0}
 --- !u!61 &1972371232
 BoxCollider2D:
@@ -39353,6 +39518,7 @@ MonoBehaviour:
   - {fileID: 2027657794}
   correntAnswers:
   - {fileID: 714172595}
+  multipleAnswer: 0
 --- !u!61 &2027657794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39856,6 +40022,7 @@ MonoBehaviour:
   - {fileID: 1064028241}
   - {fileID: 1502478517}
   - {fileID: 617329444}
+  multipleAnswer: 0
 --- !u!1 &2043382003
 GameObject:
   m_ObjectHideFlags: 0
@@ -40420,6 +40587,7 @@ MonoBehaviour:
   - {fileID: 2091232102}
   correntAnswers:
   - {fileID: 238527808}
+  multipleAnswer: 0
 --- !u!61 &2091232102
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40586,6 +40754,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 2093780552}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!61 &2093780552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40656,6 +40825,7 @@ MonoBehaviour:
   - {fileID: 2101142603}
   correntAnswers:
   - {fileID: 973816172}
+  multipleAnswer: 0
 --- !u!58 &2101142603
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41477,6 +41647,7 @@ MonoBehaviour:
   snapAreas:
   - {fileID: 2128157981}
   correntAnswers: []
+  multipleAnswer: 0
 --- !u!58 &2128157981
 CircleCollider2D:
   m_ObjectHideFlags: 0
